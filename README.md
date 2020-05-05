@@ -1,5 +1,6 @@
 ## ViewPagerY
 > 自定义ViewPager,支持展示图片,展示布局
+> [源码解析](https://blog.csdn.net/MoLiao2046/article/details/105936958)
 ##### 依赖
 ```groovy
 implementation 'com.yey.viewpagery:library_vpy:0.0.4'
