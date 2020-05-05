@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         resTypes.add(new ResType<Integer>(R.mipmap.image2, ResType.Type.IAMG));
         resTypes.add(new ResType<String>("https://wx3.sinaimg.cn/mw690/006LHkGply1gebsmxnod3j30v80uxh18.jpg", ResType.Type.URL));
         resTypes.add(new ResType<Integer>(R.layout.layout_test_vpy, ResType.Type.LAYOUT));
+        // 设置资源集合
         mVpy.setRes(resTypes);
+        // 设置界面切换时间
+        mVpy.setScrollDuration(200);
     }
 }

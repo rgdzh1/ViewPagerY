@@ -1,5 +1,4 @@
 package com.yey.viewpagery;
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -9,12 +8,9 @@ import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.Scroller;
-
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-
 import java.util.ArrayList;
-
 public class ViewPagerY extends ViewGroup {
     private int height;
     private int widht;
@@ -45,6 +41,7 @@ public class ViewPagerY extends ViewGroup {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        // 设置ViewPagerY尺寸
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         height = getMeasuredHeight();
         widht = getMeasuredWidth();
@@ -61,7 +58,6 @@ public class ViewPagerY extends ViewGroup {
         for (int i = 0; i < getChildCount(); i++) {
             this.getChildAt(i).layout(i * widht, 0, i * widht + widht, height);
         }
-
     }
 
     /**
