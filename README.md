@@ -3,7 +3,7 @@
 > [源码解析](https://blog.csdn.net/MoLiao2046/article/details/105936958)
 ##### 依赖
 ```groovy
-implementation 'com.yey.viewpagery:library_vpy:0.0.4'
+implementation 'com.yey.viewpagery:library_vpy:0.0.5'
 ```
 #### XML
 ```xml

@@ -11,6 +11,8 @@ import android.widget.Scroller;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import java.util.ArrayList;
+import java.util.List;
+
 public class ViewPagerY extends ViewGroup {
     private int height;
     private int widht;
@@ -112,7 +114,7 @@ public class ViewPagerY extends ViewGroup {
      *
      * @param res
      */
-    public void setRes(ArrayList<ResType> res) {
+    public void setRes(List<ResType> res) {
         for (ResType mResType : res) {
             if (mResType.getmType() == ResType.Type.IAMG) {
                 ImageView imageView = new ImageView(mContext);
